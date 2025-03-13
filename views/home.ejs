@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Wishlist</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="main">
+    <h1>Book Wishlist</h1>
+        <form action="submit" method="post" id="book-form">
+            <label>Book Title</label>
+            <input type="text" name="title" id="title"></input>
+            <label>Comments</label>
+            <textarea name="comments" id="comments"></textarea>
+            <label>Rating</label>
+            <select name="rating" id="rating">
+                <option value="1 Star">1 Star</option>
+                <option value="2 Star">2 Star</option>
+                <option value="3 Star">3 Star</option>
+                <option value="4 Star">4 Star</option>
+                <option value="5 Star">5 Star</option>
+            </select>
+            <button type="submit" class="main-button">Add Book to Wishlist</button>
+        </form>
+    </div>
+</body>
+</html>

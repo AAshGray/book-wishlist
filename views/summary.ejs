@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Wishlist</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="main">
+    <h1>Book Wishlist List</h1>
+        <% if (!booklist || booklist.length === 0) { %>
+            <p>Please add a book to the wishlist.</p>
+
+        <% } else { %>
+            <% for (let i = 0; i < booklist.length; i++)  { %>
+                <p><strong>Title:</strong> <%= booklist[i].title %> </p>
+                <p><strong>Comments:</strong> <%= booklist[i].comments %> </p>
+                <p><strong>Rating:</strong> <%= booklist[i].rating %></p>
+                <hr>
+            <% } %>    
+        <% } %>
+    </div>
+</body>
+</html>
