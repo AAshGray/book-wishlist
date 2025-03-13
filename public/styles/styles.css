@@ -7,8 +7,9 @@ body {
 .main {
     background-color:antiquewhite;
     width: 70%;
-    margin: 0 auto 1rem auto;
-    padding: 0 1rem 2rem 1rem;
+    margin: 1em auto 1rem auto;
+    padding: 1em 1rem 2rem 1rem;
+    border-radius: 5px;
     
 }
 
